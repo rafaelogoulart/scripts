@@ -1,5 +1,3 @@
-Reinicia o Spooler
-
 @echo off
 Color 1F
 Title - - - CANCELANDO E LIMPANDO O SISTEMA DE IMPRESSAO - - -
@@ -9,3 +7,7 @@ del /q/f/s %systemroot%\system32\spool\PRINTERS\*.SPL
 net start spooler
 exit
 
+
+------------------------------------------------------------------
+1º Copie o sprit acima descrito.
+2º Cole no bloco de notas e salve como Ex: spooler.bat
