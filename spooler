@@ -1,0 +1,11 @@
+Reinicia o Spooler
+
+@echo off
+Color 1F
+Title - - - CANCELANDO E LIMPANDO O SISTEMA DE IMPRESSAO - - -
+net stop spooler
+del /q/f/s %systemroot%\system32\spool\PRINTERS\*.SHD 
+del /q/f/s %systemroot%\system32\spool\PRINTERS\*.SPL
+net start spooler
+exit
+
